@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#expandable-banner {
+  display: block;
+  width: 600px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#main {
+  width: inherit;
+  height: inherit;
+}
+
+#bg-exit {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#container {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+#aside {
+  display: inline-block;
+  width: 300px;
+  height: inherit;
+  transition: right 300ms ease-in-out;
+}
+
+.aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.aside--expanded {
+  right: 300px;
+}
+
+#section {
+  position: relative;
+  display: block;
+  float: right;
+  width: 300px;
+  height: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#exit-area {
+  width: inherit;
+  height: 52px;
+  margin-bottom: -3px;
+}
+
+#action-area {
+  width: inherit;
+  height: 198px;
+}
+
+#video {
+  width: inherit;
+  height: 169px;
+  margin-bottom: -3px;
+}
+
+#cta-banner {
+  width: inherit;
+  height: 21px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #682b8d;
+}
+
+#button-container {
+  width: inherit;
+  height: 60px;
+  background-color: #682b8d;
+}
+
+button {
+  background-color: #e0004d;
+  color: #ffffff;
+  border: none;
+}
+
+#register-exit {
+  width: 135px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#action-button {
+  position: absolute;
+  top: 135px;
+  left: 10px;
+  width: 256px;
+  height: 37px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 5px;
+  text-align: left;
+  user-select: none;
+  pointer-events: none;
+}
+
+#action-button span {
+  display: inline-block;
+  width: 210px;
+}
+
+#action-button img {
+  width: 12px;
+  height: 12px;
+}

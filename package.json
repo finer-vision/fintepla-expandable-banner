@@ -1,0 +1,17 @@
+{
+  "name": "expandable-banner",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Martin Wheeler",
+  "license": "ISC",
+  "devDependencies": {
+    "html-inline-css-webpack-plugin": "^1.11.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
