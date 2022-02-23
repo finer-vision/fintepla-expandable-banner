@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./index.css" />
     <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
-    <title>Document</title>
+    <title>Expandable Banners</title>
   </head>
   <body>
     <div id="expandable-banner">
@@ -20,11 +20,33 @@
         <div id="container">
           <!-- video banner -->
           <aside id="aside" class="aside">
-            <video id="video" width="'300px" height="169px" muted controls>
-              <source src="assets/15sec.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div id="cta-banner" class="flex-center">PROFESSOR HELEN</div>
+            <div id="video-controls">
+              <div id="controls">
+                <button id="play" class="control-button play-control">
+                  <img src="assets/video-player/play.png" alt="play" />
+                </button>
+                <button id="pause" class="control-button play-control">
+                  <img src="assets/video-player/pause.png" alt="pause" />
+                </button>
+                <button id="muted" class="control-button volume-control">
+                  <img
+                    src="assets/video-player/volume-mute-filled.png"
+                    alt="muted"
+                  />
+                </button>
+                <button id="unmuted" class="control-button volume-control">
+                  <img
+                    src="assets/video-player/volume-mute-filled-1.png"
+                    alt="unmuted"
+                  />
+                </button>
+              </div>
+              <video id="video" width="'300px" height="169px">
+                <source src="assets/15sec.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div id="cta-banner" class="flex-center">PROFESSOR HELEN CROSS</div>
             <div id="button-container" class="flex-center">
               <button id="register-exit">
                 <a
@@ -38,6 +60,7 @@
           </aside>
           <!-- main banner -->
           <section id="section">
+            <!-- TODO update with new PI link when provided -->
             <a
               href="https://fintepla.eu/wp-content/uploads/pdf/Fintepla-fenfluramine-Prescribing-Information.pdf"
               target="_blank"
