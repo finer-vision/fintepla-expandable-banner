@@ -12,3 +12,5 @@ npm run build
 ```
 
 This will generate minified files/optimized PNG images in the `dist` directory in the root of the project.
+
+This will also generate a `dist.zip` file for ue on Google Studio.
