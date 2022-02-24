@@ -152,3 +152,9 @@ function handleVolume(e) {
 mutedButton.addEventListener("click", handleVolume, false);
 unmutedButton.addEventListener("click", handleVolume, false);
 unmutedButton.addEventListener("mouseenter", showControls, false);
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (isSafari) {
+  video.setAttribute("controls", true);
+  videoControls.style.display = "none";
+}
