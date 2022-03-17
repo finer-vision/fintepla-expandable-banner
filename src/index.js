@@ -67,6 +67,7 @@ actionArea.addEventListener(
   () => {
     if (!mouseOver) actionClickHandler();
     mouseOver = true;
+    banner.style.width = "600px";
   },
   false
 );
@@ -75,6 +76,7 @@ banner.addEventListener(
   () => {
     if (mouseOver) actionClickHandler();
     mouseOver = false;
+    banner.style.width = "300px";
   },
   false
 );

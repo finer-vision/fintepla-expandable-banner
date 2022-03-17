@@ -23,10 +23,10 @@ a {
 }
 
 #expandable-banner {
+  float: right;
   display: block;
-  width: 600px;
+  width: 300px;
   height: 250px;
-  overflow: hidden;
 }
 
 #main {
